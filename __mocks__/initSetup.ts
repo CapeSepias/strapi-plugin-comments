@@ -112,7 +112,8 @@ export = (config: any = {}, toStore: boolean = false, database: any = {}) => {
             send: async () => { }
           }
         }
-      }
+      },
+      graphql: {}
     },
     config: {
       get: function (prop: string = "") {
