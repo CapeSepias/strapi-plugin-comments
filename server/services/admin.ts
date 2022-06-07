@@ -125,7 +125,7 @@ export = ({ strapi }: StrapiContext): IServiceAdmin => ({
   // Find all comments
   async findAll(
     this: IServiceAdmin,
-    { related, entity, ...query }: AdminFindAllProps
+    { ...query }: AdminFindAllProps
   ): Promise<AdminPaginatedResponse<Comment>> {
     const {
       _q,

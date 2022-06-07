@@ -49,8 +49,8 @@ export type FindAllInHierarhyProps = Omit<FindAllFlatProps, "pagination"> & {
 };
 
 export type AdminFindAllProps = {
-  related: string;
-  entity: any;
+  related?: string;
+  entity?: any;
 } & StrapiQueryParams;
 
 export type AdminFindAllQueryParamsParsed = {
@@ -62,7 +62,7 @@ export type AdminFindAllQueryParamsParsed = {
 } & StrapiQueryParamsParsed;
 
 export type AdminFindOneAndThreadProps = {
-  removed: boolean;
+  removed?: boolean;
 } & StrapiQueryParams;
 
 export type AdminSinglePageResponse = {

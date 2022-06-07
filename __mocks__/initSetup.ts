@@ -113,7 +113,14 @@ export = (config: any = {}, toStore: boolean = false, database: any = {}) => {
           }
         }
       },
-      graphql: {}
+      graphql: {},
+      "users-permissions": {
+        contentTypes: {
+          user: {
+            uid: 'plugin::users-permissions.user',
+          }
+        }
+      },
     },
     config: {
       get: function (prop: string = "") {
@@ -132,6 +139,12 @@ export = (config: any = {}, toStore: boolean = false, database: any = {}) => {
         },
       },
     },
+    contentTypes: {
+      'plugin::users-permissions.user': {
+        uid: 'plugin::users-permissions.user',
+        attributes: {}
+      }
+    }
   };
 
   if (!isEmpty(database)) {
